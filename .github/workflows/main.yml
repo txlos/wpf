@@ -24,10 +24,9 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: .\build.cmd -pack -ci -configuration Debug -prepareMachine /p:Platform=x64
+        run: git checkout f226a72ed5302737b14984cffdd6208731244038
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+        run: .\build.cmd -pack -ci -configuration Debug -prepareMachine /p:Platform=x64
+
